@@ -14,7 +14,7 @@ function NewTicket() {
 
   const [name] = useState(user.name)
   const [email] = useState(user.email)
-  const [product, setProduct] = useState('iPhone')
+  const [product, setProduct] = useState('club')
   const [description, setDescription] = useState('')
 
   const dispatch = useDispatch()
@@ -62,17 +62,17 @@ function NewTicket() {
         </div>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
-            <label htmlFor='product'>Product</label>
+            <label htmlFor='product'>Action</label>
             <select
               name='product'
               id='product'
               value={product}
               onChange={(e) => setProduct(e.target.value)}
             >
-              <option value='iPhone'>iPhone</option>
-              <option value='Macbook Pro'>Macbook Pro</option>
-              <option value='iMac'>iMac</option>
-              <option value='iPad'>iPad</option>
+              <option value='club'>Night Club</option>
+              <option value='soccer'>Football Match</option>
+              <option value='cinema'>Cinema</option>
+              <option value='event'>Special Event</option>
             </select>
           </div>
           <div className='form-group'>

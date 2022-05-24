@@ -35,7 +35,7 @@ function Tickets() {
       <div className='tickets'>
         <div className='ticket-headings'>
           <div>Date</div>
-          <div>Product</div>
+          <div>Action</div>
           <div>Status</div>
           <div></div>
         </div>
